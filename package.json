@@ -1,0 +1,19 @@
+{
+  "name": "the-graph",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "matchstick"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-ts": "^0.31.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.4",
+    "jest": "^29.7.0",
+    "matchstick-as": "^0.6.0",
+    "typescript": "^5.3.3"
+  }
+}

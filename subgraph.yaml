@@ -1,0 +1,25 @@
+specVersion: 0.0.4
+description: 'Dummy subgraph for testing'
+repository: 'https://github.com/your-repo'
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Contract
+    network: goerli
+    source:
+      address: '0x0000000000000000000000000000000000000000'
+      abi: Contract
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - DummyEntity
+      abis:
+        - name: Contract
+          file: ./dummy_abi.json
+      eventHandlers:
+        - event: DummyEvent(uint256)
+          handler: handleDummyEvent
+      file: ./src/mapping.ts

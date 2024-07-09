@@ -1,0 +1,4 @@
+type DummyEntity @entity {
+  id: ID!
+  value: BigInt!
+}
